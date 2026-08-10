@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rivam — Polityka prywatności / Privacy Policy</title>
+<style>
+  :root { --fg:#1a1a1a; --muted:#5a5a5a; --rule:#e2e2e2; --accent:#22B157; --bg:#fff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e8e8e8; --muted:#9a9a9a; --rule:#333; --bg:#161616; }
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0 auto; padding:2.5rem 1.25rem 5rem; max-width:44rem;
+    font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color:var(--fg); background:var(--bg);
+  }
+  h1 { font-size:1.6rem; margin:0 0 .25rem; letter-spacing:-.01em; }
+  h2 { font-size:1.15rem; margin:2.5rem 0 .6rem; letter-spacing:-.01em; }
+  h3 { font-size:1rem; margin:1.5rem 0 .4rem; }
+  p, li { color:var(--fg); }
+  .meta { color:var(--muted); font-size:.9rem; margin:0 0 2rem; }
+  .lang { border-top:1px solid var(--rule); margin-top:4rem; padding-top:2.5rem; }
+  ul { padding-left:1.2rem; }
+  li { margin:.3rem 0; }
+  strong { font-weight:600; }
+  a { color:var(--accent); }
+  .key { border-left:3px solid var(--accent); padding:.6rem 0 .6rem 1rem; margin:1.2rem 0; }
+  footer { margin-top:3rem; padding-top:1.5rem; border-top:1px solid var(--rule); color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+
+<h1>Polityka prywatności aplikacji Rivam</h1>
+<p class="meta">Ostatnia aktualizacja: 10 sierpnia 2026 · <a href="#en">English version below</a></p>
+
+<div class="key">
+<strong>W skrócie:</strong> Rivam nie ma serwera. Aplikacja nie łączy się z internetem, nie wysyła
+żadnych danych do twórcy ani do osób trzecich, nie zawiera analityki ani narzędzi śledzących.
+Wszystkie dane pozostają na urządzeniu, na którym je wprowadzono.
+</div>
+
+<h2>1. Kto odpowiada za dane</h2>
+<p>
+Rivam to narzędzie pracy trenera personalnego. Twórca aplikacji <strong>nie ma dostępu do żadnych
+danych</strong> wprowadzonych do aplikacji — nie istnieje kanał techniczny, którym mogłyby do niego
+trafić.
+</p>
+<p>
+Jeśli używasz Rivam do prowadzenia dokumentacji swoich klientów, to <strong>Ty jesteś
+administratorem ich danych osobowych</strong> w rozumieniu RODO. To na Tobie spoczywa obowiązek
+poinformowania klientów o przetwarzaniu ich danych, uzyskania podstawy prawnej i realizacji ich
+praw. Twórca aplikacji nie jest podmiotem przetwarzającym, ponieważ dane nigdy do niego nie
+docierają.
+</p>
+
+<h2>2. Jakie dane przechowuje aplikacja</h2>
+<p>Wyłącznie te, które sam wprowadzisz lub które zbierze podłączony czujnik:</p>
+<ul>
+  <li><strong>Dane klienta:</strong> imię, nazwisko, wiek, płeć, waga, wzrost, cel treningowy, notatki, tętno spoczynkowe</li>
+  <li><strong>Dane kontaktowe klienta:</strong> telefon, adres e-mail</li>
+  <li><strong>Zdjęcie klienta</strong> (opcjonalnie)</li>
+  <li><strong>Dane treningowe:</strong> plany, sesje, wykonane serie, ciężary, rekordy życiowe, pomiary składu ciała</li>
+  <li><strong>Dane z czujnika tętna:</strong> przebieg tętna w trakcie sesji, strefy, szacunek wydatku kalorycznego</li>
+  <li><strong>Profil trenera:</strong> dane wprowadzone w ustawieniach, w tym zdjęcie</li>
+</ul>
+
+<h2>3. Gdzie te dane są</h2>
+<p>
+W lokalnej bazie danych aplikacji na Twoim urządzeniu. Zdjęcia jako pliki JPEG w prywatnym
+katalogu aplikacji. Kopie zapasowe w folderze <em>Rivam Backups</em>, widocznym w aplikacji Pliki.
+</p>
+<p>
+Jeśli masz włączoną kopię zapasową iCloud lub iTunes/Finder, dane aplikacji mogą zostać objęte
+kopią systemową Twojego urządzenia. To mechanizm Apple, poza kontrolą aplikacji — zasady opisuje
+polityka prywatności Apple.
+</p>
+
+<h2>4. Dane zdrowotne</h2>
+<h3>Aplikacja Zdrowie (HealthKit)</h3>
+<p>
+Rivam <strong>zapisuje</strong> do aplikacji Zdrowie ukończone treningi wraz z tętnem, dzięki czemu
+widać je w historii aktywności. Aplikacja <strong>nie odczytuje</strong> żadnych danych z aplikacji
+Zdrowie. Zapis wymaga Twojej wyraźnej zgody i możesz ją w każdej chwili wycofać w Ustawieniach
+systemu.
+</p>
+<p>
+Dane zdrowotne nie są używane do reklam, marketingu ani profilowania i nie są nikomu przekazywane.
+</p>
+<h3>Czujnik tętna Bluetooth</h3>
+<p>
+Aplikacja łączy się bezpośrednio z paskiem tętna (np. Polar H10, Wahoo TICKR). Połączenie jest
+lokalne, między urządzeniem a czujnikiem. Bluetooth działa również przy zablokowanym ekranie, żeby
+pomiar nie urywał się w trakcie sesji.
+</p>
+
+<h2>5. Zabezpieczenia</h2>
+<ul>
+  <li><strong>Blokada aplikacji</strong> kodem PIN oraz Face ID / Touch ID</li>
+  <li><strong>Kod PIN</strong> nie jest przechowywany w postaci jawnej — zapisany jest wyłącznie jego skrót wzmocniony funkcją PBKDF2-SHA256, w systemowym Pęku kluczy</li>
+  <li><strong>Numer telefonu i adres e-mail klienta</strong> są szyfrowane w bazie</li>
+  <li><strong>Kopie zapasowe</strong> są szyfrowane kluczem powiązanym z urządzeniem</li>
+  <li><strong>Szyfrowanie systemowe iOS</strong> chroni dane aplikacji, gdy urządzenie jest zablokowane</li>
+</ul>
+
+<h2>6. Kopie zapasowe i eksport</h2>
+<p>
+Aplikacja pozwala eksportować dane — kopię bazy, raport PDF dla klienta, plik CSV — oraz zapisywać
+kopie do wybranego przez Ciebie folderu. <strong>Po opuszczeniu aplikacji dane przestają być objęte
+jej zabezpieczeniami.</strong> Jeśli zapiszesz kopię w iCloud Drive, wyślesz raport mailem albo
+udostępnisz plik CSV, odpowiadasz za to, co się z nim dalej dzieje. Dotyczy to zwłaszcza danych
+zdrowotnych klientów.
+</p>
+
+<h2>7. Czego aplikacja nie robi</h2>
+<ul>
+  <li>Nie wysyła danych na żaden serwer — nie zawiera kodu komunikacji sieciowej</li>
+  <li>Nie zawiera analityki, telemetrii ani raportowania awarii</li>
+  <li>Nie zawiera bibliotek reklamowych ani śledzących</li>
+  <li>Nie śledzi Cię między aplikacjami ani witrynami</li>
+  <li>Nie sprzedaje ani nie udostępnia danych osobom trzecim</li>
+  <li>Nie wymaga konta ani logowania</li>
+  <li>Nie korzysta z żadnych zewnętrznych bibliotek</li>
+</ul>
+
+<h2>8. Usunięcie danych</h2>
+<p>
+Usunięcie aplikacji z urządzenia usuwa bazę danych, zdjęcia i kopie zapasowe zapisane w jej
+katalogu. Pliki wyeksportowane wcześniej poza aplikację — do Plików, iCloud Drive, poczty — trzeba
+usunąć osobno. Treningi zapisane w aplikacji Zdrowie usuwa się w aplikacji Zdrowie.
+</p>
+<p>
+Pojedynczego klienta wraz z całą jego historią możesz usunąć w każdej chwili z poziomu aplikacji.
+</p>
+
+<h2>9. Dzieci</h2>
+<p>
+Rivam jest narzędziem zawodowym, przeznaczonym dla trenerów personalnych, nie dla dzieci. Jeśli
+prowadzisz w aplikacji dokumentację osoby niepełnoletniej, obowiązek uzyskania zgody jej opiekuna
+prawnego spoczywa na Tobie.
+</p>
+
+<h2>10. Zmiany polityki</h2>
+<p>
+Jeśli przyszła wersja aplikacji zacznie przetwarzać dane inaczej — na przykład zyska synchronizację
+w chmurze — polityka zostanie zaktualizowana przed wydaniem tej wersji, a data na górze strony
+ulegnie zmianie.
+</p>
+
+<h2>11. Kontakt</h2>
+<p>
+Pytania dotyczące prywatności w Rivam: <a href="mailto:adamdrywulski@gmail.com">adamdrywulski@gmail.com</a>
+</p>
+
+<div class="lang" id="en">
+<h1>Rivam Privacy Policy</h1>
+<p class="meta">Last updated: 10 August 2026</p>
+
+<div class="key">
+<strong>In short:</strong> Rivam has no server. The app does not connect to the internet, sends no
+data to its developer or to third parties, and contains no analytics or tracking. All data stays on
+the device where it was entered.
+</div>
+
+<h2>1. Who is responsible for the data</h2>
+<p>
+Rivam is a working tool for personal trainers. The developer <strong>has no access to any data</strong>
+entered into the app — there is no technical channel through which it could reach them.
+</p>
+<p>
+If you use Rivam to keep records about your clients, <strong>you are the data controller</strong> for
+their personal data under the GDPR. Informing your clients, establishing a lawful basis and handling
+their requests are your responsibility. The developer is not a data processor, because the data never
+reaches them.
+</p>
+
+<h2>2. What the app stores</h2>
+<p>Only what you enter yourself or what a connected sensor records:</p>
+<ul>
+  <li><strong>Client details:</strong> first and last name, age, sex, weight, height, training goal, notes, resting heart rate</li>
+  <li><strong>Client contact details:</strong> phone number, email address</li>
+  <li><strong>Client photo</strong> (optional)</li>
+  <li><strong>Training data:</strong> plans, sessions, completed sets, loads, personal records, body composition measurements</li>
+  <li><strong>Heart-rate sensor data:</strong> heart-rate trace during a session, zones, estimated energy expenditure</li>
+  <li><strong>Trainer profile:</strong> details entered in settings, including a photo</li>
+</ul>
+
+<h2>3. Where the data lives</h2>
+<p>
+In the app's local database on your device. Photos are stored as JPEG files in the app's private
+directory. Backups are written to a <em>Rivam Backups</em> folder visible in the Files app.
+</p>
+<p>
+If you use iCloud or iTunes/Finder backups, the app's data may be included in your device's system
+backup. That is an Apple mechanism outside the app's control and is governed by Apple's privacy policy.
+</p>
+
+<h2>4. Health data</h2>
+<h3>Apple Health (HealthKit)</h3>
+<p>
+Rivam <strong>writes</strong> completed workouts and heart rate to Apple Health so that they appear in
+your activity history. The app <strong>does not read</strong> anything from Apple Health. Writing
+requires your explicit permission, which you can withdraw at any time in system Settings.
+</p>
+<p>
+Health data is never used for advertising, marketing or profiling, and is never shared with anyone.
+</p>
+<h3>Bluetooth heart-rate sensor</h3>
+<p>
+The app connects directly to a heart-rate strap (for example Polar H10 or Wahoo TICKR). The connection
+is local, between your device and the sensor. Bluetooth also runs while the screen is locked, so that
+the measurement is not interrupted mid-session.
+</p>
+
+<h2>5. Safeguards</h2>
+<ul>
+  <li><strong>App lock</strong> with a PIN and Face ID / Touch ID</li>
+  <li><strong>The PIN</strong> is never stored in plain form — only a PBKDF2-SHA256 strengthened hash is kept, in the system Keychain</li>
+  <li><strong>Client phone numbers and email addresses</strong> are encrypted in the database</li>
+  <li><strong>Backups</strong> are encrypted with a device-bound key</li>
+  <li><strong>iOS system encryption</strong> protects app data while the device is locked</li>
+</ul>
+
+<h2>6. Backups and export</h2>
+<p>
+The app lets you export data — a database copy, a client PDF report, a CSV file — and save backups to a
+folder of your choice. <strong>Once data leaves the app, the app's safeguards no longer apply.</strong>
+If you store a backup in iCloud Drive, email a report or share a CSV file, what happens to it next is
+your responsibility. This matters most for clients' health data.
+</p>
+
+<h2>7. What the app does not do</h2>
+<ul>
+  <li>Does not send data to any server — it contains no networking code</li>
+  <li>Contains no analytics, telemetry or crash reporting</li>
+  <li>Contains no advertising or tracking libraries</li>
+  <li>Does not track you across apps or websites</li>
+  <li>Does not sell or share data with third parties</li>
+  <li>Requires no account and no sign-in</li>
+  <li>Uses no external libraries</li>
+</ul>
+
+<h2>8. Deleting data</h2>
+<p>
+Deleting the app removes its database, photos and the backups held in its own directory. Files you
+exported elsewhere — to Files, iCloud Drive or email — must be deleted separately. Workouts written to
+Apple Health are removed from within the Health app.
+</p>
+<p>
+An individual client, together with their entire history, can be deleted from within the app at any time.
+</p>
+
+<h2>9. Children</h2>
+<p>
+Rivam is a professional tool intended for personal trainers, not for children. If you keep records for a
+minor, obtaining consent from their legal guardian is your responsibility.
+</p>
+
+<h2>10. Changes to this policy</h2>
+<p>
+If a future version of the app processes data differently — for example by adding cloud sync — this
+policy will be updated before that version ships, and the date at the top of the page will change.
+</p>
+
+<h2>11. Contact</h2>
+<p>
+Privacy questions about Rivam: <a href="mailto:adamdrywulski@gmail.com">adamdrywulski@gmail.com</a>
+</p>
+</div>
+
+<footer>
+Rivam — aplikacja dla trenerów personalnych.
+</footer>
+
+</body>
+</html>
