@@ -32,7 +32,7 @@
 <body>
 
 <h1>Polityka prywatności aplikacji Rivam</h1>
-<p class="meta">Ostatnia aktualizacja: 10 sierpnia 2026 · <a href="#en">English version below</a></p>
+<p class="meta">Ostatnia aktualizacja: 10 października 2026 · <a href="#en">English version below</a></p>
 
 <div class="key">
 <strong>W skrócie:</strong> Rivam nie ma serwera. Aplikacja nie łączy się z internetem, nie wysyła
@@ -53,6 +53,11 @@ poinformowania klientów o przetwarzaniu ich danych, uzyskania podstawy prawnej 
 praw. Twórca aplikacji nie jest podmiotem przetwarzającym, ponieważ dane nigdy do niego nie
 docierają.
 </p>
+<p>
+Aplikacja pomaga Ci te obowiązki spełnić: pokazuje klientowi informację o przetwarzaniu danych
+(z Twoimi danymi jako administratora), zapisuje jego zgodę na przetwarzanie danych o zdrowiu,
+pozwala tę zgodę wycofać i przygotować dla klienta kopię wszystkich jego danych.
+</p>
 
 <h2>2. Jakie dane przechowuje aplikacja</h2>
 <p>Wyłącznie te, które sam wprowadzisz lub które zbierze podłączony czujnik:</p>
@@ -62,7 +67,11 @@ docierają.
   <li><strong>Zdjęcie klienta</strong> (opcjonalnie)</li>
   <li><strong>Dane treningowe:</strong> plany, sesje, wykonane serie, ciężary, rekordy życiowe, pomiary składu ciała</li>
   <li><strong>Dane z czujnika tętna:</strong> przebieg tętna w trakcie sesji, strefy, szacunek wydatku kalorycznego</li>
+  <li><strong>Wywiad zdrowotny klienta:</strong> przeciwwskazania, choroby, urazy, leki, ból, tryb życia i parametry treningowe — z historią wywiadów</li>
+  <li><strong>Test FMS klienta</strong> (Functional Movement Screen): oceny wzorców ruchowych i ból w testach wykluczających — z historią pomiarów</li>
+  <li><strong>Zgoda klienta na przetwarzanie danych o zdrowiu:</strong> data, imię i nazwisko podpisującego (klienta albo opiekuna) lub informacja o zgodzie na papierze, kopia treści informacji, którą klient widział</li>
   <li><strong>Profil trenera:</strong> dane wprowadzone w ustawieniach, w tym zdjęcie</li>
+  <li><strong>Dane administratora:</strong> Twoje imię i nazwisko lub nazwa firmy, adres, kontakt, okres przechowywania — wstawiane do informacji dla klienta</li>
 </ul>
 
 <h2>3. Gdzie te dane są</h2>
@@ -87,6 +96,18 @@ systemu.
 <p>
 Dane zdrowotne nie są używane do reklam, marketingu ani profilowania i nie są nikomu przekazywane.
 </p>
+<h3>Wywiad zdrowotny i test FMS</h3>
+<p>
+Wywiad i wyniki FMS to dane o zdrowiu klienta (szczególna kategoria danych w rozumieniu art. 9
+RODO). Są <strong>szyfrowane w bazie</strong> kluczem przechowywanym w systemowym Pęku kluczy
+urządzenia. Aplikacja <strong>nie pozwala zapisać</strong> wywiadu ani pomiaru FMS bez zgody klienta
+odebranej w aplikacji — po zapoznaniu się z informacją o przetwarzaniu danych.
+</p>
+<p>
+Klient może zgodę w każdej chwili wycofać. Wycofanie w aplikacji <strong>usuwa wszystkie wywiady
+i pomiary FMS</strong> klienta razem z zapisaną zgodą; profil, treningi i pomiary składu ciała zostają.
+Kopie zapasowe zrobione wcześniej zawierają te dane, dopóki nie zastąpią ich nowsze.
+</p>
 <h3>Czujnik tętna Bluetooth</h3>
 <p>
 Aplikacja łączy się bezpośrednio z paskiem tętna (np. Polar H10, Wahoo TICKR). Połączenie jest
@@ -98,18 +119,29 @@ pomiar nie urywał się w trakcie sesji.
 <ul>
   <li><strong>Blokada aplikacji</strong> kodem PIN oraz Face ID / Touch ID</li>
   <li><strong>Kod PIN</strong> nie jest przechowywany w postaci jawnej — zapisany jest wyłącznie jego skrót wzmocniony funkcją PBKDF2-SHA256, w systemowym Pęku kluczy</li>
-  <li><strong>Numer telefonu i adres e-mail klienta</strong> są szyfrowane w bazie</li>
-  <li><strong>Kopie zapasowe</strong> są szyfrowane kluczem powiązanym z urządzeniem</li>
+  <li><strong>Numer telefonu, adres e-mail, wywiad zdrowotny i wyniki FMS klienta</strong> są szyfrowane w bazie</li>
+  <li><strong>Kopie zapasowe</strong> są szyfrowane kluczem powiązanym z urządzeniem, a kopia do przeniesienia na inne urządzenie — hasłem, które ustalasz</li>
   <li><strong>Szyfrowanie systemowe iOS</strong> chroni dane aplikacji, gdy urządzenie jest zablokowane</li>
 </ul>
 
 <h2>6. Kopie zapasowe i eksport</h2>
 <p>
-Aplikacja pozwala eksportować dane — kopię bazy, raport PDF dla klienta, plik CSV — oraz zapisywać
+Aplikacja pozwala eksportować dane — kopię bazy, raport PDF postępów, plik CSV — oraz zapisywać
 kopie do wybranego przez Ciebie folderu. <strong>Po opuszczeniu aplikacji dane przestają być objęte
 jej zabezpieczeniami.</strong> Jeśli zapiszesz kopię w iCloud Drive, wyślesz raport mailem albo
 udostępnisz plik CSV, odpowiadasz za to, co się z nim dalej dzieje. Dotyczy to zwłaszcza danych
 zdrowotnych klientów.
+</p>
+<p>
+<strong>Pliki <em>.rivam</em>:</strong> plany treningowe i wyniki sesji (w tym przebieg tętna) można
+przekazywać między trenerem a klientem jako pliki — na przykład przez AirDrop. Plik trafia
+bezpośrednio do wskazanej osoby, bez udziału serwera.
+</p>
+<p>
+<strong>Dane klienta (PDF):</strong> na prośbę klienta aplikacja przygotowuje kopię wszystkich jego
+danych — profil, kontakt, zgodę, wywiady, FMS, skład ciała, plany i treningi. Plik zawiera dane
+o zdrowiu <strong>bez szyfrowania</strong>; przekaż go bezpośrednio klientowi. Kopia tymczasowa
+w aplikacji jest usuwana po zamknięciu okna udostępniania.
 </p>
 
 <h2>7. Czego aplikacja nie robi</h2>
@@ -131,6 +163,8 @@ usunąć osobno. Treningi zapisane w aplikacji Zdrowie usuwa się w aplikacji Zd
 </p>
 <p>
 Pojedynczego klienta wraz z całą jego historią możesz usunąć w każdej chwili z poziomu aplikacji.
+Na prośbę klienta możesz też wycofać jego zgodę na przetwarzanie danych o zdrowiu (usuwa wywiady
+i pomiary FMS) albo przygotować kopię wszystkich jego danych w PDF (punkt 6).
 </p>
 
 <h2>9. Dzieci</h2>
@@ -154,7 +188,7 @@ Pytania dotyczące prywatności w Rivam: <a href="mailto:adamdrywulski@gmail.com
 
 <div class="lang" id="en">
 <h1>Rivam Privacy Policy</h1>
-<p class="meta">Last updated: 10 August 2026</p>
+<p class="meta">Last updated: 10 October 2026</p>
 
 <div class="key">
 <strong>In short:</strong> Rivam has no server. The app does not connect to the internet, sends no
@@ -173,6 +207,11 @@ their personal data under the GDPR. Informing your clients, establishing a lawfu
 their requests are your responsibility. The developer is not a data processor, because the data never
 reaches them.
 </p>
+<p>
+The app helps you meet these obligations: it shows the client a notice about how their data is
+processed (with your details as the controller), records their consent to the processing of health
+data, lets that consent be withdrawn, and prepares a copy of all of the client's data for them.
+</p>
 
 <h2>2. What the app stores</h2>
 <p>Only what you enter yourself or what a connected sensor records:</p>
@@ -182,7 +221,11 @@ reaches them.
   <li><strong>Client photo</strong> (optional)</li>
   <li><strong>Training data:</strong> plans, sessions, completed sets, loads, personal records, body composition measurements</li>
   <li><strong>Heart-rate sensor data:</strong> heart-rate trace during a session, zones, estimated energy expenditure</li>
+  <li><strong>Client health interview:</strong> contraindications, conditions, injuries, medication, pain, lifestyle and training parameters — with interview history</li>
+  <li><strong>Client FMS test</strong> (Functional Movement Screen): movement pattern scores and pain in clearing tests — with measurement history</li>
+  <li><strong>Client consent to the processing of health data:</strong> date, full name of the signer (client or guardian) or a note that consent was given on paper, and a copy of the notice the client saw</li>
   <li><strong>Trainer profile:</strong> details entered in settings, including a photo</li>
+  <li><strong>Controller details:</strong> your name or business name, address, contact and retention period — inserted into the client notice</li>
 </ul>
 
 <h2>3. Where the data lives</h2>
@@ -205,6 +248,19 @@ requires your explicit permission, which you can withdraw at any time in system 
 <p>
 Health data is never used for advertising, marketing or profiling, and is never shared with anyone.
 </p>
+<h3>Health interview and FMS test</h3>
+<p>
+The interview and FMS results are the client's health data (a special category of data under
+Art. 9 GDPR). They are <strong>encrypted in the database</strong> with a key kept in the device's
+system Keychain. The app <strong>does not allow saving</strong> an interview or an FMS measurement
+without the client's consent recorded in the app, after the client has seen the data processing notice.
+</p>
+<p>
+The client can withdraw consent at any time. Withdrawing it in the app <strong>deletes all of the
+client's interviews and FMS measurements</strong> together with the recorded consent; the profile,
+workouts and body composition measurements remain. Earlier backups still contain this data until
+newer ones replace them.
+</p>
 <h3>Bluetooth heart-rate sensor</h3>
 <p>
 The app connects directly to a heart-rate strap (for example Polar H10 or Wahoo TICKR). The connection
@@ -216,17 +272,28 @@ the measurement is not interrupted mid-session.
 <ul>
   <li><strong>App lock</strong> with a PIN and Face ID / Touch ID</li>
   <li><strong>The PIN</strong> is never stored in plain form — only a PBKDF2-SHA256 strengthened hash is kept, in the system Keychain</li>
-  <li><strong>Client phone numbers and email addresses</strong> are encrypted in the database</li>
-  <li><strong>Backups</strong> are encrypted with a device-bound key</li>
+  <li><strong>Client phone numbers, email addresses, health interviews and FMS results</strong> are encrypted in the database</li>
+  <li><strong>Backups</strong> are encrypted with a device-bound key; a backup for moving to another device is encrypted with a password you choose</li>
   <li><strong>iOS system encryption</strong> protects app data while the device is locked</li>
 </ul>
 
 <h2>6. Backups and export</h2>
 <p>
-The app lets you export data — a database copy, a client PDF report, a CSV file — and save backups to a
+The app lets you export data — a database copy, a progress PDF report, a CSV file — and save backups to a
 folder of your choice. <strong>Once data leaves the app, the app's safeguards no longer apply.</strong>
 If you store a backup in iCloud Drive, email a report or share a CSV file, what happens to it next is
 your responsibility. This matters most for clients' health data.
+</p>
+<p>
+<strong><em>.rivam</em> files:</strong> training plans and session results (including the heart-rate
+trace) can be passed between trainer and client as files — for example via AirDrop. The file goes
+directly to the chosen person, with no server involved.
+</p>
+<p>
+<strong>Client data (PDF):</strong> at the client's request, the app prepares a copy of all of their
+data — profile, contact details, consent, interviews, FMS, body composition, plans and workouts. The
+file contains health data <strong>unencrypted</strong>; hand it directly to the client. The temporary
+copy inside the app is deleted when the share sheet is closed.
 </p>
 
 <h2>7. What the app does not do</h2>
@@ -248,6 +315,8 @@ Apple Health are removed from within the Health app.
 </p>
 <p>
 An individual client, together with their entire history, can be deleted from within the app at any time.
+At the client's request you can also withdraw their consent to the processing of health data (this
+deletes interviews and FMS measurements) or prepare a PDF copy of all of their data (section 6).
 </p>
 
 <h2>9. Children</h2>
